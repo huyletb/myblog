@@ -15,15 +15,15 @@
 	require ("common/users.php");
 
 
-	if(isset($_GET['id'])){
+	if (isset($_GET['id'])) {
 		$article_id = $_GET['id'];
-	}else $article_id = "";
+	} else $article_id = "";
 
 	$article = new Articles();
 	$article_data = $article -> getArticle_byID($article_id);
-	if($article_data == null) $article->varDump();
+	if ($article_data == null) $article->varDump();
 
-	if($article_data['article_date']==NULL) $article_date = "date of article";
+	if ($article_data['article_date']==NULL) $article_date = "date of article";
 		else $article_date = date('Y-m-d',strtotime($article_data['article_date']));
 ?>
 
