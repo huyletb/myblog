@@ -1,7 +1,7 @@
 <?php
 require ("common/articles.php");
 
-if(isset($_GET['id'])){
+if (isset($_GET['id'])) {
 	$category_id = $_GET['id'];
 }
 else $category_id = "";
@@ -13,7 +13,7 @@ $listArticles = $articles->getArticles_sumary_byCategory_id($category_id);
 <div class="all_articles">
 	<ul>
 		 <?php
-		 	if($listArticles != NULL){ 
+		 	if ($listArticles != NULL) { 
 		 		foreach ($listArticles as $item) {
 		 ?> 
 
@@ -28,7 +28,7 @@ $listArticles = $articles->getArticles_sumary_byCategory_id($category_id);
 
 			<?php
 				} 
-			}else echo 'There are no fucking any articles here';
+			} else echo 'There are no fucking any articles here';
 		 ?> 
 	</ul>
 </div>
