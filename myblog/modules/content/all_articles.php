@@ -7,7 +7,7 @@ $listArticles = $articles->getArticles_sumary();
 <div class="all_articles">
 	<ul>
 		 <?php
-		 	if($listArticles != NULL){ 
+		 	if ($listArticles != NULL) { 
 		 		foreach ($listArticles as $item) {
 		 ?> 
 
@@ -22,7 +22,7 @@ $listArticles = $articles->getArticles_sumary();
 
 			<?php
 				} 
-			}else echo "there're some fuckig errors"; 
+			} else echo "there're some fuckig errors"; 
 		 ?> 
 	</ul>
 </div>
