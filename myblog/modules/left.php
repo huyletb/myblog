@@ -23,7 +23,7 @@
 	<ul>
 		<li><a href="index.php">Home</a></li>
    <?php 
-   		if($listCategories != NULL){
+   		if ($listCategories != NULL) {
    		foreach ($listCategories as $items) { ?>
    			<li><a href="index.php?view=detail_category&id=<?php echo $items['category_id']; ?>"><?php echo $items['category_name']; ?></a></li>
    		<?php }
